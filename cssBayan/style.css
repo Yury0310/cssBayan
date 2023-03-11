@@ -19,21 +19,9 @@ h1 {
   visibility: visible;
   opacity: 1;
 }
-/* .block:hover ion-icon {
-  visibility: visible;
-  opacity: 1;
-} */
 .item-input:checked ~ .item__title ion-icon {
   transform: rotate(45deg);
 }
-
-/* .block:hover .item__title {
-  color: black;
-}
-.block:hover {
-  cursor: pointer;
-} */
-
 .item__title {
   overflow-y: hidden;
   display: flex;
@@ -52,24 +40,19 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-
 .block__item {
   padding: 1rem;
   border-bottom: 0.1rem solid gray;
 }
-
 .item-input {
   appearance: none;
   -webkit-appearance: none;
   width: 0;
   height: 0;
 }
-
-/* .item-input:hover ~ .item__title, */
 .item-input:checked ~ .item__title {
   color: black;
 }
-/* .item-input:hover ~ .block__img, */
 .item-input:checked ~ .block__img {
   opacity: 1;
   height: 100%;
