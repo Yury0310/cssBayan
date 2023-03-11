@@ -16,23 +16,23 @@ h1 {
 }
 .item__title ion-icon {
   color: black;
-  visibility: hidden;
-  opacity: 0;
-}
-.block:hover ion-icon {
   visibility: visible;
   opacity: 1;
 }
+/* .block:hover ion-icon {
+  visibility: visible;
+  opacity: 1;
+} */
 .item-input:checked ~ .item__title ion-icon {
   transform: rotate(45deg);
 }
 
-.block:hover .item__title {
+/* .block:hover .item__title {
   color: black;
 }
 .block:hover {
   cursor: pointer;
-}
+} */
 
 .item__title {
   overflow-y: hidden;
@@ -65,15 +65,16 @@ h1 {
   height: 0;
 }
 
-.item-input:hover ~ .item__title,
+/* .item-input:hover ~ .item__title, */
 .item-input:checked ~ .item__title {
   color: black;
 }
-.item-input:hover ~ .block__img,
+/* .item-input:hover ~ .block__img, */
 .item-input:checked ~ .block__img {
   opacity: 1;
   height: 100%;
 }
+
 @media (min-width: 1920px) {
   h1 {
     font-size: 4rem;
@@ -96,5 +97,29 @@ h1 {
   }
   .item__title {
     font-size: 0.5rem;
+  }
+}
+@media (hover: hover) {
+  .block:hover ion-icon {
+    visibility: visible;
+    opacity: 1;
+  }
+  .block:hover .item__title {
+    color: black;
+  }
+  .item__title ion-icon {
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .block:hover {
+    cursor: pointer;
+  }
+  .item-input:hover ~ .item__title {
+    color: black;
+  }
+  .item-input:hover ~ .block__img {
+    opacity: 1;
+    height: 100%;
   }
 }
